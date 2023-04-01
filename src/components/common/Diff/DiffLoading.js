@@ -55,8 +55,11 @@ const DiffLoading = () => (
       <TitleLoader />
     </Header>
     <div
-      css={{
-        padding: '5px 10px',
+      style={{
+        paddingTop: 5,
+        paddingBottom: 5,
+        paddingLeft: 10,
+        paddingRight: 10,
       }}
     >
       <DiffLoader />

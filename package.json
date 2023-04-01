@@ -4,13 +4,13 @@
   "license": "MIT",
   "homepage": "https://react-native-community.github.io/upgrade-helper",
   "scripts": {
-    "build": "EXTEND_ESLINT=true react-app-rewired build",
-    "docker-test-e2e": "yarn start-and-wait && react-app-rewired test --watchAll=false --onlyChanged=false --testPathPattern='/__tests__/.*(\\.|).e2e.spec.js?$'",
+    "build": "EXTEND_ESLINT=true react-scripts build",
+    "docker-test-e2e": "yarn start-and-wait && react-scripts test --watchAll=false --onlyChanged=false --testPathPattern='/__tests__/.*(\\.|).e2e.spec.js?$'",
     "lint": "eslint . --cache --report-unused-disable-directives",
     "prepare": "husky install",
-    "start": "EXTEND_ESLINT=true react-app-rewired start",
+    "start": "EXTEND_ESLINT=true react-scripts start",
     "start-and-wait": "yarn start & wget --retry-connrefused --waitretry=1 --read-timeout=20 --timeout=15 -t 30 http://localhost:3000/",
-    "test": "react-app-rewired test --watchAll=false --onlyChanged=false --testPathPattern='/__tests__/((?!e2e).)*.spec.js?$'",
+    "test": "react-scripts test --watchAll=false --onlyChanged=false --testPathPattern='/__tests__/((?!e2e).)*.spec.js?$'",
     "test-e2e": "docker-compose run tests"
   },
   "dependencies": {
@@ -35,10 +35,7 @@
     "use-persisted-state": "^0.3.3"
   },
   "devDependencies": {
-    "@emotion/babel-preset-css-prop": "^11.10.0",
-    "@emotion/eslint-plugin": "^11.10.0",
     "@testing-library/react": "^14.0.0",
-    "customize-cra": "^1.0.0",
     "eslint": "^8.35.0",
     "eslint-plugin-prettier": "^4.2.1",
     "gh-pages": "5.0.0",
@@ -46,8 +43,7 @@
     "jest-image-snapshot": "6.1.0",
     "prettier": "2.8.4",
     "pretty-quick": "3.1.3",
-    "puppeteer": "10.0.0",
-    "react-app-rewired": "^2.2.1"
+    "puppeteer": "10.0.0"
   },
   "browserslist": {
     "production": [
@@ -66,8 +62,7 @@
       "react-app"
     ],
     "plugins": [
-      "prettier",
-      "@emotion"
+      "prettier"
     ],
     "rules": {
       "prettier/prettier": "error",
