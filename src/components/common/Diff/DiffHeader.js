@@ -116,7 +116,7 @@ const CompleteDiffButton = styled(({ open, onClick, ...props }) =>
       icon={<CheckOutlined />}
       onClick={onClick}
     />
-  )
+  ),
 )`
   ${defaultIconButtonStyle}
   &,
@@ -154,7 +154,7 @@ const CopyPathToClipboardButton = styled(
         />
       </Popover>
     </CopyToClipboard>
-  )
+  ),
 )`
   ${defaultIconButtonStyle}
 `
@@ -197,7 +197,7 @@ const CopyAnchorLinksToClipboardButton = styled(
         </Popover>
       </CopyToClipboard>
     )
-  }
+  },
 )`
   ${defaultIconButtonStyle}
 `
@@ -210,7 +210,7 @@ const CollapseClickableArea = styled.div`
 `
 
 const CollapseDiffButton = styled(({ open, isDiffCollapsed, ...props }) =>
-  open ? <Button {...props} type="link" icon={<DownOutlined />} /> : null
+  open ? <Button {...props} type="link" icon={<DownOutlined />} /> : null,
 )`
   color: #24292e;
   margin-right: 2px;
@@ -251,7 +251,7 @@ const DiffHeader = ({
 
   const id = React.useMemo(
     () => generatePathId(oldPath, newPath),
-    [oldPath, newPath]
+    [oldPath, newPath],
   )
 
   return (

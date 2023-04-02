@@ -102,7 +102,7 @@ const HideContentButton = styled(
       icon={isContentOpen ? <UpOutlined /> : <DownOutlined />}
       onClick={toggleContentVisibility}
     />
-  )
+  ),
 )`
   float: right;
   position: absolute;
@@ -188,7 +188,7 @@ class UsefulContentSection extends Component {
     })
 
     const doesAnyVersionHaveUsefulLinks = versions.some(
-      ({ usefulContent }) => !!usefulContent
+      ({ usefulContent }) => !!usefulContent,
     )
 
     return (

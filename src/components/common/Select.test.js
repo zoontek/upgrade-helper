@@ -8,7 +8,7 @@ it('renders without crashing', () => {
       title="The title"
       options={['one option', 'other option']}
       value="one option"
-    />
+    />,
   )
 
   expect(container).toMatchInlineSnapshot(`

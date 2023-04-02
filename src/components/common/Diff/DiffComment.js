@@ -103,7 +103,7 @@ const getComments = ({ packageName, newPath, fromVersion, toVersion }) => {
     ({ comments }) =>
       comments &&
       comments.length > 0 &&
-      comments.some(({ fileName }) => fileName === newPathSanitized)
+      comments.some(({ fileName }) => fileName === newPathSanitized),
   )
 
   return versionsInDiff.reduce((allComments, version) => {
@@ -120,7 +120,7 @@ const getComments = ({ packageName, newPath, fromVersion, toVersion }) => {
           ),
         }
       },
-      {}
+      {},
     )
 
     return {

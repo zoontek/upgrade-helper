@@ -13,7 +13,7 @@ const popoverContentOpts = {
 const CopyFileButton = styled(
   ({ open, version, path, packageName, appName, ...props }) => {
     const [popoverContent, setPopoverContent] = useState(
-      popoverContentOpts.default
+      popoverContentOpts.default,
     )
 
     if (!open) {
@@ -40,7 +40,7 @@ const CopyFileButton = styled(
         />
       </Popover>
     )
-  }
+  },
 )`
   font-size: 13px;
   margin-left: 5px;

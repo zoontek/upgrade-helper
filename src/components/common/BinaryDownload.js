@@ -56,7 +56,7 @@ const BinaryDownload = ({
   packageName,
 }) => {
   const binaryFiles = diff.filter(
-    ({ hunks, type }) => hunks.length === 0 && type !== 'delete'
+    ({ hunks, type }) => hunks.length === 0 && type !== 'delete',
   )
 
   if (binaryFiles.length === 0) {

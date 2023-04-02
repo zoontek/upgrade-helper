@@ -75,7 +75,7 @@ const DiffViewer = ({
     },
   }
   const [donePopoverOpts, setDonePopoverOpts] = useState(
-    donePopoverPossibleOpts.done
+    donePopoverPossibleOpts.done,
   )
   const doneTitleRef = useRef(null)
 
@@ -96,7 +96,7 @@ const DiffViewer = ({
   const handleCompleteDiff = (diffKey) => {
     if (completedDiffs.includes(diffKey)) {
       return setCompletedDiffs((prevCompletedDiffs) =>
-        prevCompletedDiffs.filter((completedDiff) => completedDiff !== diffKey)
+        prevCompletedDiffs.filter((completedDiff) => completedDiff !== diffKey),
       )
     }
 
@@ -117,7 +117,7 @@ const DiffViewer = ({
   const resetCompletedDiffs = () => setCompletedDiffs([])
 
   const [diffViewStyle, setViewStyle] = useState(
-    localStorage.getItem('viewStyle') || 'split'
+    localStorage.getItem('viewStyle') || 'split',
   )
 
   const handleViewStyleChange = (newViewStyle) => {

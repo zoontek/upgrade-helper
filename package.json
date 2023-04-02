@@ -6,6 +6,7 @@
   "scripts": {
     "build": "EXTEND_ESLINT=true react-scripts build",
     "docker-test-e2e": "yarn start-and-wait && react-scripts test --watchAll=false --onlyChanged=false --testPathPattern='/__tests__/.*(\\.|).e2e.spec.js?$'",
+    "format": "prettier '**/*' --ignore-unknown --write",
     "lint": "eslint . --cache --report-unused-disable-directives",
     "prepare": "husky install",
     "start": "EXTEND_ESLINT=true react-scripts start",

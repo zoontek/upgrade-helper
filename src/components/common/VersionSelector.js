@@ -39,7 +39,7 @@ const ToVersionSelector = styled(({ popover, ...props }) =>
     })
   ) : (
     <Select {...props} />
-  )
+  ),
 )`
   @media ${deviceSizes.tablet} {
     padding-left: 5px;
@@ -49,7 +49,7 @@ const ToVersionSelector = styled(({ popover, ...props }) =>
 const getVersionsInURL = () => {
   // Parses `/?from=VERSION&to=VERSION` from URL
   const { from: fromVersion, to: toVersion } = queryString.parse(
-    window.location.search
+    window.location.search,
   )
 
   return {
@@ -71,7 +71,7 @@ const stripAnchorInUrl = () => {
 
 const compareReleaseCandidateVersions = ({ version, versionToCompare }) =>
   ['prerelease', 'prepatch', null].includes(
-    semver.diff(version, versionToCompare)
+    semver.diff(version, versionToCompare),
   )
 
 const getLatestMajorReleaseVersion = (releasedVersions) =>
@@ -80,9 +80,9 @@ const getLatestMajorReleaseVersion = (releasedVersions) =>
       releasedVersions.find(
         (releasedVersion) =>
           !semver.prerelease(releasedVersion) &&
-          semver.patch(releasedVersion) === 0
-      )
-    )
+          semver.patch(releasedVersion) === 0,
+      ),
+    ),
   )
 
 // Check if `from` rc version is one of the latest major release (ie. 0.60.0)
@@ -144,7 +144,7 @@ const getReleasedVersions = ({ releasedVersions, minVersion, maxVersion }) => {
       ((maxVersion && semver.lt(releasedVersion, maxVersion)) ||
         (minVersion &&
           semver.gt(releasedVersion, minVersion) &&
-          !isVersionAReleaseAndOfLatest(releasedVersion)))
+          !isVersionAReleaseAndOfLatest(releasedVersion))),
   )
 }
 
@@ -155,8 +155,8 @@ const getFirstMajorRelease = ({ releasedVersions, versionToCompare }) =>
       semver.lt(releasedVersion, versionToCompare) &&
       semver.diff(
         semver.valid(semver.coerce(releasedVersion)),
-        semver.valid(semver.coerce(versionToCompare))
-      ) === 'minor'
+        semver.valid(semver.coerce(versionToCompare)),
+      ) === 'minor',
   )
 
 // Return if version exists in the ones returned from GitHub
@@ -238,13 +238,13 @@ const VersionSelector = ({
         getReleasedVersions({
           releasedVersions: sanitizedVersions,
           maxVersion: toVersionToBeSet,
-        })
+        }),
       )
       setToVersionList(
         getReleasedVersions({
           releasedVersions: sanitizedVersions,
           minVersion: fromVersionToBeSet,
-        })
+        }),
       )
 
       setLocalFromVersion(fromVersionToBeSet)
@@ -275,13 +275,13 @@ const VersionSelector = ({
       getReleasedVersions({
         releasedVersions: allVersions,
         maxVersion: localToVersion,
-      })
+      }),
     )
     setToVersionList(
       getReleasedVersions({
         releasedVersions: allVersions,
         minVersion: localFromVersion,
-      })
+      }),
     )
 
     if (hasVersionsFromURL) {

@@ -104,11 +104,11 @@ const Diff = ({
   appName,
 }) => {
   const [isDiffCollapsed, setIsDiffCollapsed] = useState(
-    isDiffCollapsedByDefault({ type, hunks })
+    isDiffCollapsedByDefault({ type, hunks }),
   )
 
   const [copyPathPopoverContent, setCopyPathPopoverContent] = useState(
-    copyPathPopoverContentOpts.default
+    copyPathPopoverContentOpts.default,
   )
 
   const handleCopyPathToClipboard = () => {
@@ -135,7 +135,7 @@ const Diff = ({
         })),
       }))
     },
-    [appName]
+    [appName],
   )
 
   if (areAllCollapsed !== undefined && areAllCollapsed !== isDiffCollapsed) {

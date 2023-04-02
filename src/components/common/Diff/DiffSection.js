@@ -32,7 +32,7 @@ const DiffSection = ({
   const getIsUpgradingFrom61To62 = useCallback(() => {
     const isUpgradingFrom61 = semver.satisfies(
       fromVersion,
-      '>= 0.61.0 <= 0.62.0'
+      '>= 0.61.0 <= 0.62.0',
     )
 
     const isUpgradingTo62 = semver.satisfies(toVersion, '>= 0.62.0 <= 0.63.0')

@@ -20,7 +20,7 @@ describe('Home', () => {
     await page.evaluate((pageTargetVersion) => {
       const element = [
         ...document.querySelectorAll(
-          '.ant-select-dropdown.ant-select-dropdown-placement-bottomLeft:not(.ant-select-dropdown-hidden) .ant-select-item-option-content'
+          '.ant-select-dropdown.ant-select-dropdown-placement-bottomLeft:not(.ant-select-dropdown-hidden) .ant-select-item-option-content',
         ),
       ].find(({ innerText: version }) => version === pageTargetVersion)
 
@@ -38,7 +38,7 @@ describe('Home', () => {
 
   it('2. should hide the troubleshooting guides alert and show the troubleshooting guides', async () => {
     await page.click(
-      `button[data-testid="${troubleshootingGuidesButtonTestIDs.troubleshootingGuidesButton}"]`
+      `button[data-testid="${troubleshootingGuidesButtonTestIDs.troubleshootingGuidesButton}"]`,
     )
 
     await waitToRender()
@@ -50,7 +50,7 @@ describe('Home', () => {
 
   it('3. should hide the troubleshooting guides and show the normal header', async () => {
     await page.click(
-      `button[data-testid="${troubleshootingGuidesButtonTestIDs.troubleshootingGuidesButton}"]`
+      `button[data-testid="${troubleshootingGuidesButtonTestIDs.troubleshootingGuidesButton}"]`,
     )
 
     await waitToRender()
@@ -62,7 +62,7 @@ describe('Home', () => {
 
   it('4. should load the current versions', async () => {
     await page.click(
-      `div[data-testid="${versionSelectorTestIDs.fromVersionSelector}"] input`
+      `div[data-testid="${versionSelectorTestIDs.fromVersionSelector}"] input`,
     )
 
     await waitToRender()
@@ -84,7 +84,7 @@ describe('Home', () => {
 
   it('6. should load the upgrading versions', async () => {
     await page.click(
-      `div[data-testid="${versionSelectorTestIDs.toVersionSelector}"] input`
+      `div[data-testid="${versionSelectorTestIDs.toVersionSelector}"] input`,
     )
 
     await waitToRender()
@@ -127,7 +127,7 @@ describe('Home', () => {
 
   it('10. should collapse first file in diff', async () => {
     await page.click(
-      `[data-testid="${diffHeaderTestIDs.collapseClickableArea}"]`
+      `[data-testid="${diffHeaderTestIDs.collapseClickableArea}"]`,
     )
 
     const image = await page.screenshot()

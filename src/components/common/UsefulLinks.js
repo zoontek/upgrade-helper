@@ -52,7 +52,7 @@ class UsefulLinks extends Component {
     const { versions } = this.props
 
     const doesAnyVersionHaveUsefulContent = versions.some(
-      ({ usefulContent }) => !!usefulContent
+      ({ usefulContent }) => !!usefulContent,
     )
 
     if (!doesAnyVersionHaveUsefulContent) {

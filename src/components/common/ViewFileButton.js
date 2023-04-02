@@ -19,7 +19,7 @@ const ViewFileButton = styled(
         Raw
       </Button>
     )
-  }
+  },
 )`
   font-size: 12px;
   color: #24292e;

@@ -51,7 +51,7 @@ const CompletedFilesCounter = styled(
         }}
       />
     </div>
-  )
+  ),
 )`
   position: fixed;
   bottom: 20px;

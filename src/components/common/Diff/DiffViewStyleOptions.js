@@ -18,7 +18,7 @@ const DiffViewStyleOptions = styled(
         Unified
       </Radio.Button>
     </Radio.Group>
-  )
+  ),
 )`
   float: right;
   position: absolute;

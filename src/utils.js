@@ -69,7 +69,7 @@ export const replaceWithProvidedAppName = (path, appName) => {
     .replace(new RegExp(DEFAULT_APP_NAME, 'g'), appName)
     .replace(
       new RegExp(DEFAULT_APP_NAME.toLowerCase(), 'g'),
-      appName.toLowerCase()
+      appName.toLowerCase(),
     )
 }
 

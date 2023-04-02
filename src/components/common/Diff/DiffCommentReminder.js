@@ -29,7 +29,7 @@ const DiffCommentReminder = styled(
         </span>
       </motion.div>
     )
-  }
+  },
 )`
   display: inline;
   background-color: #fffbe6;
