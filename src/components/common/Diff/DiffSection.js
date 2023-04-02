@@ -1,5 +1,5 @@
-import React, { useState, useCallback } from 'react'
 import styled from '@emotion/styled'
+import { useCallback, useState } from 'react'
 import semver from 'semver'
 import Diff from './Diff'
 

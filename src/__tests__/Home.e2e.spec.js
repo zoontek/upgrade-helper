@@ -1,9 +1,9 @@
-import { launchBrowser, waitToRender, closeBrowser } from '../utils/test-utils'
-import { testIDs as versionSelectorTestIDs } from '../components/common/VersionSelector'
-import { testIDs as upgradeButtonTestIDs } from '../components/common/UpgradeButton'
-import { testIDs as diffSectionTestIDs } from '../components/common/Diff/DiffSection'
 import { testIDs as diffHeaderTestIDs } from '../components/common/Diff/DiffHeader'
+import { testIDs as diffSectionTestIDs } from '../components/common/Diff/DiffSection'
 import { testIDs as troubleshootingGuidesButtonTestIDs } from '../components/common/TroubleshootingGuidesButton'
+import { testIDs as upgradeButtonTestIDs } from '../components/common/UpgradeButton'
+import { testIDs as versionSelectorTestIDs } from '../components/common/VersionSelector'
+import { closeBrowser, launchBrowser, waitToRender } from '../utils/test-utils'
 
 describe('Home', () => {
   let page

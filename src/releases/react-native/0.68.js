@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import { Fragment } from 'react'
 
 const newArchitectureFiles = [
   'android/app/src/main/java/com/rndiffapp/newarchitecture/MainApplicationReactNativeHost.java',

@@ -1,8 +1,7 @@
-import React from 'react'
+import { css, keyframes } from '@emotion/react'
 import styled from '@emotion/styled'
-import { keyframes, css } from '@emotion/react'
-import Confetti from 'react-dom-confetti'
 import { Popover } from 'antd'
+import Confetti from 'react-dom-confetti'
 
 const shake = keyframes`
   0% {

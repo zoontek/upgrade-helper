@@ -1,9 +1,9 @@
 import semver from 'semver/preload'
 import {
-  RN_DIFF_REPOSITORIES,
   DEFAULT_APP_NAME,
   PACKAGE_NAMES,
   RN_CHANGELOG_URLS,
+  RN_DIFF_REPOSITORIES,
 } from './constants'
 import versions from './releases'
 

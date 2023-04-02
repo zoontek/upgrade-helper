@@ -1,13 +1,13 @@
-import React, { Fragment, useState, useEffect, useRef } from 'react'
 import styled from '@emotion/styled'
 import { Popover } from 'antd'
-import semver from 'semver/preload'
 import queryString from 'query-string'
+import React, { Fragment, useEffect, useRef, useState } from 'react'
+import semver from 'semver/preload'
+import { useFetchReleaseVersions } from '../../hooks/fetch-release-versions'
+import { deviceSizes } from '../../utils/device-sizes'
+import { updateURL } from '../../utils/update-url'
 import { Select } from './'
 import UpgradeButton from './UpgradeButton'
-import { useFetchReleaseVersions } from '../../hooks/fetch-release-versions'
-import { updateURL } from '../../utils/update-url'
-import { deviceSizes } from '../../utils/device-sizes'
 
 export const testIDs = {
   fromVersionSelector: 'fromVersionSelector',

@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
 import styled from '@emotion/styled'
 import { motion } from 'framer-motion'
-import { removeAppPathPrefix, getVersionsContentInDiff } from '../../../utils'
+import { useState } from 'react'
+import { getVersionsContentInDiff, removeAppPathPrefix } from '../../../utils'
 import Markdown from '../Markdown'
 
 const lineColors = {

@@ -1,7 +1,7 @@
-import React, { useRef } from 'react'
 import styled from '@emotion/styled'
-import { Link } from './Markdown'
 import { motion, useAnimation } from 'framer-motion'
+import { useRef } from 'react'
+import { Link } from './Markdown'
 
 const TROUBLESHOOTING_GUIDES = [
   {

@@ -1,17 +1,17 @@
-import React, { Component } from 'react'
+import { DownOutlined, UpOutlined } from '@ant-design/icons'
 import styled from '@emotion/styled'
-import { UpOutlined, DownOutlined } from '@ant-design/icons'
 import { Button } from 'antd'
 import { motion } from 'framer-motion'
+import { Component } from 'react'
 
 import {
-  getVersionsContentInDiff,
   getChangelogURL,
   getTransitionDuration,
+  getVersionsContentInDiff,
 } from '../../utils'
+import AlignDepsAlert from './AlignDepsAlert'
 import UpgradeSupportAlert from './UpgradeSupportAlert'
 import UsefulLinks from './UsefulLinks'
-import AlignDepsAlert from './AlignDepsAlert'
 
 import { PACKAGE_NAMES } from '../../constants'
 

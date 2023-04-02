@@ -1,6 +1,5 @@
-import React from 'react'
-import { Button } from 'antd'
 import { DownloadOutlined } from '@ant-design/icons'
+import { Button } from 'antd'
 import { getBinaryFileURL } from '../../utils'
 
 const DownloadFileButton = ({ open, version, path, packageName, ...props }) => {

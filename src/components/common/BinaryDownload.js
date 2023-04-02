@@ -1,8 +1,7 @@
-import React from 'react'
-import { Button, Popover as AntdPopover, Tooltip } from 'antd'
 import styled from '@emotion/styled'
-import DownloadFileButton from './DownloadFileButton'
+import { Popover as AntdPopover, Button, Tooltip } from 'antd'
 import { removeAppPathPrefix } from '../../utils'
+import DownloadFileButton from './DownloadFileButton'
 
 const Container = styled.div`
   padding-right: 10px;

@@ -1,7 +1,6 @@
-import React from 'react'
+import { InfoCircleOutlined } from '@ant-design/icons'
 import styled from '@emotion/styled'
 import { motion } from 'framer-motion'
-import { InfoCircleOutlined } from '@ant-design/icons'
 import { getTransitionDuration } from '../../../utils'
 
 const DiffCommentReminder = styled(

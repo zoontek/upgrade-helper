@@ -1,6 +1,6 @@
-import React from 'react'
 import styled from '@emotion/styled'
 import { Button as AntdButton } from 'antd'
+import React from 'react'
 
 export const testIDs = {
   upgradeButton: 'upgradeButton',

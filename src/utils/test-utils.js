@@ -1,6 +1,6 @@
 import fs from 'fs'
-import puppeteer from 'puppeteer'
 import { configureToMatchImageSnapshot } from 'jest-image-snapshot'
+import puppeteer from 'puppeteer'
 
 let browser
 let page

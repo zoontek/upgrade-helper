@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from '@emotion/styled'
 import { Select as AntdSelect, Typography } from 'antd'
 

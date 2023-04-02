@@ -1,20 +1,20 @@
-import React from 'react'
-import styled from '@emotion/styled'
-import { Tag, Button, Popover } from 'antd'
 import {
   CheckOutlined,
-  DownOutlined,
-  RightOutlined,
   CopyOutlined,
-  RollbackOutlined,
+  DownOutlined,
   LinkOutlined,
+  RightOutlined,
+  RollbackOutlined,
 } from '@ant-design/icons'
-import { getFilePathsToShow } from '../../../utils'
+import styled from '@emotion/styled'
+import { Button, Popover, Tag } from 'antd'
+import React from 'react'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
-import DiffCommentReminder from './DiffCommentReminder'
+import { getFilePathsToShow } from '../../../utils'
+import CopyFileButton from '../CopyFileButton'
 import DownloadFileButton from '../DownloadFileButton'
 import ViewFileButton from '../ViewFileButton'
-import CopyFileButton from '../CopyFileButton'
+import DiffCommentReminder from './DiffCommentReminder'
 
 export const testIDs = {
   collapseClickableArea: 'collapseClickableArea',

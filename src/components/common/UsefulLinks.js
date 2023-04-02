@@ -1,8 +1,8 @@
-import React, { Component, Fragment } from 'react'
 import styled from '@emotion/styled'
+import { Component, Fragment } from 'react'
+import { PACKAGE_NAMES } from '../../constants'
 import { getChangelogURL } from '../../utils'
 import { Link } from './Markdown'
-import { PACKAGE_NAMES } from '../../constants'
 
 const Separator = styled.hr`
   margin: 15px 0;

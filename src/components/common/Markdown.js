@@ -1,6 +1,5 @@
-import React from 'react'
-import Markdown from 'markdown-to-jsx'
 import styled from '@emotion/styled'
+import Markdown from 'markdown-to-jsx'
 
 export const Link = styled((props) => (
   // eslint-disable-next-line jsx-a11y/anchor-has-content

@@ -1,15 +1,15 @@
-import React, { useState, useCallback } from 'react'
 import styled from '@emotion/styled'
+import React, { useCallback, useState } from 'react'
 import {
-  Diff as RDiff,
+  Decoration as DiffDecoration,
   Hunk,
+  Diff as RDiff,
   markEdits,
   tokenize,
-  Decoration as DiffDecoration,
 } from 'react-diff-view'
-import DiffHeader from './DiffHeader'
-import { getComments } from './DiffComment'
 import { replaceWithProvidedAppName } from '../../../utils'
+import { getComments } from './DiffComment'
+import DiffHeader from './DiffHeader'
 
 const copyPathPopoverContentOpts = {
   default: 'Click to copy file path',

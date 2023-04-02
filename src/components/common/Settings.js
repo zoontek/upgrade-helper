@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
-import { Popover, Button, Checkbox, Radio, Typography } from 'antd'
-import { SHOW_LATEST_RCS } from '../../utils'
-import styled from '@emotion/styled'
 import { WindowsFilled } from '@ant-design/icons'
-import { PACKAGE_NAMES, LANGUAGE_NAMES } from '../../constants'
+import styled from '@emotion/styled'
+import { Button, Checkbox, Popover, Radio, Typography } from 'antd'
+import { useState } from 'react'
+import { LANGUAGE_NAMES, PACKAGE_NAMES } from '../../constants'
+import { SHOW_LATEST_RCS } from '../../utils'
 
 const SettingsButton = styled(Button)`
   color: initial;

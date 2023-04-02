@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import { CopyOutlined } from '@ant-design/icons'
 import styled from '@emotion/styled'
 import { Button, Popover } from 'antd'
-import { getFileApiURL, replaceWithProvidedAppName } from '../../utils'
-import { CopyOutlined } from '@ant-design/icons'
 import copy from 'copy-to-clipboard'
+import { useState } from 'react'
+import { getFileApiURL, replaceWithProvidedAppName } from '../../utils'
 
 const popoverContentOpts = {
   default: 'Copy raw contents',
