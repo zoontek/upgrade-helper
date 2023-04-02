@@ -176,7 +176,7 @@ const CopyAnchorLinksToClipboardButton = styled(
       url.searchParams.set('from', fromVersion)
       url.searchParams.set('to', toVersion)
       return url.toString()
-    }, [id])
+    }, [id, fromVersion, toVersion])
 
     return (
       <CopyToClipboard text={url} onCopy={onCopyContent}>

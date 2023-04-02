@@ -65,10 +65,10 @@
       "prettier"
     ],
     "rules": {
-      "prettier/prettier": "error",
-      "jsx-a11y/accessible-emoji": "off",
       "import/no-anonymous-default-export": "off",
-      "react-hooks/exhaustive-deps": "off"
+      "jsx-a11y/accessible-emoji": "off",
+      "prettier/prettier": "error",
+      "react-hooks/exhaustive-deps": "warn"
     }
   },
   "husky": {
